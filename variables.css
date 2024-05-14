@@ -1,0 +1,143 @@
+:root {
+  color-scheme: light dark;
+
+  /* Elu - pink */
+  --elu-01: #F8BBD0;
+  --elu-02: #EC407A;
+  /* Aux - red */
+  --aux-01: #FFCDD2;
+  --aux-02: #EF5350;
+  /* Psi - purple */
+  --psi-01: #D1C4E9;
+  --psi-02: #7E57C2;
+  /* Kub - dark green */
+  --kub-01: #C8E6C9;
+  --kub-02: #2E7D32;
+  /* Bio - cyan */
+  --bio-01: #B2DFDB;
+  --bio-02: #26A69A;
+  /* Gen - gold */
+  --gen-01: #FFF9C4;
+  --gen-02: #C3A527; /* Too Bright -> #FDD835; */
+
+  /* Color States */
+  --error-01: #FF5722;
+  --error-02: #BF360C;
+  --error-02-inv: #FBE9E7;
+
+  --font-01: 'Josefin Slab', Helvetica, Arial, sans-serif;
+  --font-02: 'Noto Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --weight-01: 100;
+  --weight-02: 400;
+  --weight-03: 700;
+
+  --size-01: 3rem;
+  --size-02: 2.25rem;
+  --size-03: 1.75rem;
+  --size-04: 1.5rem;
+  --size-05: 1.25rem;
+  --size-06: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-01: #f0f9f4;
+    --main-02: #e5ebe7;
+    --background-01: #041B34;
+    --background-02: #000001;
+    --main-background-01_blur: #041B34b3; /* Opacity is 70% */
+    --main-background-02_blur: #041B3466; /* Opacity is 40% */
+    --main-background-03_blur: #041B3433; /* Opacity is 20% */
+
+    --main-01-inv: #000001;
+    --main-02-inv: #041B34;
+    --background-01-inv: #e5ebe7;
+    --background-02-inv: #f0f9f4;
+    --main-background-01_blur-inv: #cde6ed; /* Opacity is 100% */
+    --main-background-02_blur-inv: #cde6ede6; /* Opacity is 90% */
+    --main-background-03_blur-inv: #cde6edb3; /* Opacity is 70% */
+    --main-background-04_blur-inv: #cde6ed66; /* Opacity is 40% */
+
+    --swatch-01: #000001;
+    --swatch-02: #010815;
+    --swatch-03: #021125;
+    --swatch-04: #041B34;
+    --swatch-05: #062646;
+    --swatch-06: #093A69;
+    --swatch-07: #14588B;
+    --swatch-08: #3E96BA;
+    --swatch-09: #A5D5E2;
+    --swatch-10: #cde6ed;
+    --swatch-11: #e4eff1;
+    --swatch-12: #f5ffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-01: #000001;
+    --main-02: #041B34;
+    --background-01: #e5ebe7;
+    --background-02: #f0f9f4;
+    --main-background-01_blur: #cde6edb3; /* Opacity is 70% */
+    --main-background-02_blur: #cde6ed66; /* Opacity is 40% */
+    --main-background-03_blur: #cde6ed33; /* Opacity is 20% */
+
+    --main-01-inv: #f0f9f4;
+    --main-02-inv: #e5ebe7;
+    --background-01-inv:: #cde6ed;
+    --background-02-inv:: #000001;
+    --main-background-01_blur-inv: #041B34; /* Opacity is 100% */
+    --main-background-02_blur-inv: #041B34e6; /* Opacity is 90% */
+    --main-background-03_blur-inv: #041B34b3; /* Opacity is 70% */
+    --main-background-04_blur-inv: #041B3466; /* Opacity is 40% */
+
+    --swatch-12: #021125;
+    --swatch-11: #041B34;
+    --swatch-10: #062646;
+    --swatch-09: #093A69;
+    --swatch-08: #14588B;
+    --swatch-07: #3E96BA;
+    --swatch-06: #A5D5E2;
+    --swatch-05: #bbe4eb;
+    --swatch-04: #cde6ed;
+    --swatch-03: #d9ecf0;
+    --swatch-02: #e4eff1;
+    --swatch-01: #f5ffff;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem; /* Adjusts the width */
+  height: 0.5rem; /* Consistent height */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Creates a seamless background */
+  border-radius: 9999px; /* Adds rounded corners */
+}
+
+/* Optional, for further visual refinement */
+::-webkit-scrollbar-corner {
+  background-color: var(--background-02); /* Matches your theme's background color */
+}
+
+@media (prefers-color-scheme: light) {
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.8); /* Provides a slightly translucent appearance */
+    border-radius: 9999px; /* Ensures rounded corners */
+    border-width: 1px; /* Maintains the border */
+    outline: 1px solid var(--background-02); /* Retains outline */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.8); /* Provides a slightly translucent appearance */
+    border-radius: 9999px; /* Ensures rounded corners */
+    border-width: 1px; /* Maintains the border */
+    outline: 1px solid var(--background-02); /* Retains outline */
+  }
+}
